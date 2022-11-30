@@ -1,0 +1,135 @@
+/*
+File: style.css
+GUI Assignment: HW4
+Created on: 11/28/2022
+Description: Contains styling for dynamic multiplication table
+Kyle Gaudet, UMass Lowell Computer Science, kyle_gaudet@student.uml.edu
+Copyright (c) 2022 by Kyle Gaudet. All rights reserved.
+Updated by KG on 11/29/2022
+*/
+
+/* general background styling */
+body {
+    background-color: whitesmoke;
+    margin: 0%;
+}
+
+#content {
+    text-align: center;
+}
+
+/* styling for header */
+h1 {
+    background-color: lightcyan;
+    text-align: center;
+    padding: 1%;
+    margin-bottom: 5%;
+    color: navy;
+    border-bottom: 5px;
+    border-top: 0ch;
+    border-left: 0ch;
+    border-right: 0ch;
+    border-style: solid;
+}
+
+/* styling for form */
+form {
+    color: navy;
+    font-weight: bolder;
+    font-size: large;
+    margin-right: 5%;
+    margin-left: 5%;
+    float: left;
+    border: 5px;
+    border-color: navy;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 3%;
+}
+
+/* styling for warning class/popup */
+.warning {
+    background-color: yellow;
+    color: red;
+    width: fit-content;
+    height:fit-content;
+    font-size: medium;
+    border-radius: 5px;
+}
+
+/* styling for table */
+table {
+    text-align: center;
+    border-collapse: collapse;
+}
+
+/* styling for table cells */
+td {
+    border: 1px;
+    border-color: navy;    border-style: solid;
+    margin: 0%;
+    padding: 10px;
+    background-color: white;
+}
+
+/* styling for header */
+th {
+    color: navy;
+    font-weight:bold;
+    background-color: lightcyan;
+    border: 2px;
+    border-color: navy;
+    border-style: solid;
+    /* make headers stay in place when scrolling*/
+    position:sticky;
+    top:0%;
+    left:0%;
+}
+
+/* styling for div that table is in */
+#tablediv {
+    margin-right: 5%;
+    margin-left: 5%;
+
+    /* make the table scrollable */
+    overflow:auto;
+    overflow-y:auto;
+    overflow-x: scroll;
+    max-width:fit-content;
+    max-height: 90vh;
+}
+
+/* styling for input boxes/button */
+input {
+    width: 100%;
+    background-color: lightcyan;
+    border-radius: 5px;
+}
+
+/* styling for slider to make its width match the input box */
+.slider {
+    width:102%;
+}
+
+/* styling for div holding tabs */
+#tabdiv {
+    display:inline-block;
+    position:inherit;
+    bottom: 0vh;
+    width: 90%;
+    margin-top: 1%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+/* styling for each individual tabs content*/
+.tabcontent {
+    /* make the table scrollable */
+    overflow:auto;
+    overflow-y:auto;
+    overflow-x: scroll;
+    max-width: fit-content;
+    max-height: 70vh;
+    padding:0px;
+}
